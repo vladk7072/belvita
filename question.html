@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>BelVita</title>
+  <meta name="description" content="Startup HTML">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="css/include/slick.css">
+  <link rel="stylesheet" href="css/include/select2.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+<header class="header" id="header">
+  <div class="container mob">
+    <a href="index.html" class="nav__link">
+      <img src="./images/logo.png"
+           loading="lazy"
+           width="100"
+           alt="img">
+    </a>
+    <div class="nav__item nav__item--burger no-xl md">
+      <button class="burger" id="burgerBtn" type="button">
+        <span class="burger__item">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header__inner">
+      <div class="nav nav--left" id="nav">
+        <ul class="nav__list">
+
+          <li class="nav__item home-link">
+            <a href="index.html" class="nav__link">
+              <img src="./images/logo.png"
+                   loading="lazy"
+                   width="214"
+                   height="162"
+                   alt="img">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="test.html" class="nav__link nav__link--active">
+                  <span class="nav__link__text">
+                    СОЖ-Тест
+                  </span>
+              <img width="175" height="34" class="nav__link__bg nav__link__bg--2"
+                   src="images/dist/nav__link__bg_2.svg" alt="img" loading="lazy">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="product.html" class="nav__link">
+                  <span class="nav__link__text">
+                    О Продукте
+                  </span>
+              <img width="148" height="34" class="nav__link__bg nav__link__bg--3"
+                   src="images/dist/nav__link__bg_3.svg" alt="img" loading="lazy">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="feedback.html" class="nav__link">
+                  <span class="nav__link__text">
+                    Обратная связь
+                  </span>
+              <img width="162" height="34" class="nav__link__bg nav__link__bg--6"
+                   src="images/dist/nav__link__bg_6.svg" alt="img" loading="lazy">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main test">
+
+    <div class="intro intro--question">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+
+            <!-- question 1 -->
+            <div class="question">
+              <div class="question__inner">
+                <div class="question__intro">
+                  <div class="question__intro__wrapper">
+                    <h3 class="question__intro__number">
+                      Вопрос 1
+                    </h3>
+
+                    <h2 class="question__intro__text">
+                      Намечается свободный вечерок. Какое занятие выбрать?
+                    </h2>
+                  </div>
+
+
+                  <div class="question__intro__bg"></div>
+                </div>
+
+                <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                  <div class="question__form__line">
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                      <label for="option_1" class="custom__checkbox__label">Зумба ждет меня! Люблю музыку<br
+                          class="no-md"> и свободу
+                        движения!</label>
+                    </div>
+
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                      <label for="option_2" class="custom__checkbox__label">Проведу время в компании четвероногих в
+                        приюте
+                        – им так не хватает любви!</label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn question__btn">
+                    дальше
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- end question 1 -->
+
+            <!-- question 2 -->
+            <!--<div class="question">
+              <div class="question__inner">
+                <div class="question__intro">
+                  <div class="question__intro__wrapper">
+                    <h3 class="question__intro__number">
+                      Вопрос 2
+                    </h3>
+
+                    <h2 class="question__intro__text">
+                      Какое хобби тебе больше по душе?
+                    </h2>
+                  </div>
+
+
+                  <div class="question__intro__bg"></div>
+                </div>
+
+                <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                  <div class="question__form__line">
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                      <label for="option_1" class="custom__checkbox__label">Фотография! Чаще выбираешься из дома, бываешь в потрясающих местах.</label>
+                    </div>
+
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                      <label for="option_2" class="custom__checkbox__label">Собирать букеты – это так красиво! Результат всегда приносит ощущение счастья.</label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn question__btn">
+                    дальше
+                  </button>
+                </form>
+              </div>
+            </div>-->
+            <!-- end question 2 -->
+
+            <!-- question 3 -->
+            <!--<div class="question">
+              <div class="question__inner">
+                <div class="question__intro">
+                  <div class="question__intro__wrapper">
+                    <h3 class="question__intro__number">
+                      Вопрос 3
+                    </h3>
+
+                    <h2 class="question__intro__text">
+                      Если бы тебя попросили назвать будущую профессию, что бы ты выбрал?
+                    </h2>
+                  </div>
+
+
+                  <div class="question__intro__bg"></div>
+                </div>
+
+                <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                  <div class="question__form__line">
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                      <label for="option_1" class="custom__checkbox__label">Нутрициология. Люди не перестанут есть никогда, лучше делать это с умом.</label>
+                    </div>
+
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                      <label for="option_2" class="custom__checkbox__label">Психология. Душевное здоровье – залог нашего счастья.</label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn question__btn">
+                    дальше
+                  </button>
+                </form>
+              </div>
+            </div>-->
+            <!-- end question 3 -->
+
+            <!-- question 4 -->
+            <!--<div class="question">
+              <div class="question__inner">
+                <div class="question__intro">
+                  <div class="question__intro__wrapper">
+                    <h3 class="question__intro__number">
+                      Вопрос 4
+                    </h3>
+
+                    <h2 class="question__intro__text">
+                      Как думаешь, что  тебе было бы легче освоить?
+                    </h2>
+                  </div>
+
+
+                  <div class="question__intro__bg"></div>
+                </div>
+
+                <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                  <div class="question__form__line">
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                      <label for="option_1" class="custom__checkbox__label">Быть блогером может каждый, главное – найти свой источник вдохновения!</label>
+                    </div>
+
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                      <label for="option_2" class="custom__checkbox__label">Бэкпэкинг – что может быть проще? Купил рюкзак – и поезжай куда душа просит!</label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn question__btn">
+                    дальше
+                  </button>
+                </form>
+              </div>
+            </div>-->
+            <!-- end question 4 -->
+
+            <!-- question 5 -->
+            <!--<div class="question">
+              <div class="question__inner">
+                <div class="question__intro">
+                  <div class="question__intro__wrapper">
+                    <h3 class="question__intro__number">
+                      Вопрос 5
+                    </h3>
+
+                    <h2 class="question__intro__text">
+                      На твой взгляд, где можно получить максимум удовольствия от своего занятия?
+                    </h2>
+                  </div>
+
+
+                  <div class="question__intro__bg"></div>
+                </div>
+
+                <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                  <div class="question__form__line">
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                      <label for="option_1" class="custom__checkbox__label">В коучинге ты заряжаешь людей, а они заряжают тебя  – вот секрет счастья!</label>
+                    </div>
+
+                    <div class="checkbox__item question__item">
+                      <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                      <label for="option_2" class="custom__checkbox__label">Например, косметологи кайфуют от результата – он всегда налицо.</label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn question__btn">
+                    дальше
+                  </button>
+                </form>
+              </div>
+            </div>-->
+            <!-- end question 5 -->
+
+            <!-- question 6 -->
+            <!--<div class="question">
+                          <div class="question__inner">
+                            <div class="question__intro">
+                              <div class="question__intro__wrapper">
+                                <h3 class="question__intro__number">
+                                  Вопрос 6
+                                </h3>
+
+                                <h2 class="question__intro__text">
+                                  Как думаешь, чем можно попробовать заняться хоть завтра?
+                                </h2>
+                              </div>
+
+
+                              <div class="question__intro__bg"></div>
+                            </div>
+
+                            <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                              <div class="question__form__line">
+                                <div class="checkbox__item question__item">
+                                  <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                                  <label for="option_1" class="custom__checkbox__label">А чего ждать? Можно и сегодня потанцевать на кухне в свое удовольствие!</label>
+                                  <label for="option_1" class="custom__checkbox__label">Можно наконец-то съездить в приют для животных и провести день на свежем воздухе в отличной компании! </label>
+                                </div>
+
+                                <div class="checkbox__item question__item">
+                                  <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                                  <label for="option_2" class="custom__checkbox__label">Снимать красиво можно и на смартфон, так что ждать нечего – пора творить!</label>
+                                  <label for="option_2" class="custom__checkbox__label">Кажется, рядом есть студия флористики, запишусь на пробное занятие.</label>
+                                </div>
+                              </div>
+
+                              <button type="submit" class="btn question__btn">
+                                дальше
+                              </button>
+                            </form>
+                          </div>
+                        </div>-->
+            <!-- end question 6 -->
+
+            <!-- question 7 -->
+            <!--<div class="question">
+                          <div class="question__inner">
+                            <div class="question__intro">
+                              <div class="question__intro__wrapper">
+                                <h3 class="question__intro__number">
+                                  Вопрос 7
+                                </h3>
+
+                                <h2 class="question__intro__text">
+                                  О каком новом занятии ты с удовольствием расскажешь друзьям и близким?
+                                </h2>
+                              </div>
+
+
+                              <div class="question__intro__bg"></div>
+                            </div>
+
+                            <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                              <div class="question__form__line">
+                                <div class="checkbox__item question__item">
+                                  <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                                  <label for="option_1" class="custom__checkbox__label">О правильном питании полезно знать всем. Расскажу друзьям, как делать это с удовольствием!</label>
+                                  <label for="option_1" class="custom__checkbox__label">Не только расскажу, но и приглашу на консультацию. Нужно же начинающему психологу на ком-то практиковаться!</label>
+                                </div>
+
+                                <div class="checkbox__item question__item">
+                                  <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                                  <label for="option_2" class="custom__checkbox__label">Позову друзей вместе снимать видео для блога – у них всегда много классных идей.</label>
+                                  <label for="option_2" class="custom__checkbox__label">Мои походы в горы увидят все! Закаты с высоты птичьего полета – это так красиво!</label>
+                                </div>
+                              </div>
+
+                              <button type="submit" class="btn question__btn">
+                                дальше
+                              </button>
+                            </form>
+                          </div>
+                        </div>-->
+            <!-- end question 7 -->
+
+            <!-- question 8 -->
+            <!--<div class="question">
+                          <div class="question__inner">
+                            <div class="question__intro">
+                              <div class="question__intro__wrapper">
+                                <h3 class="question__intro__number">
+                                  Вопрос 8
+                                </h3>
+
+                                <h2 class="question__intro__text">
+                                  Если бы тебе сказали, что через пару лет ты освоишь новую профессию, то что бы ты выбрал?
+                                </h2>
+                              </div>
+
+
+                              <div class="question__intro__bg"></div>
+                            </div>
+
+                            <form action="result.html" class="question__form form" id="questionForm" name="questionForm">
+                              <div class="question__form__line">
+                                <div class="checkbox__item question__item">
+                                  <input type="radio" class="custom__checkbox" id="option_1" name="option" required>
+                                  <label for="option_1" class="custom__checkbox__label">Делать успешных людей еще более успешными и счастливыми – мне это под силу!</label>
+                                  <label for="option_1" class="custom__checkbox__label">Делать людей красивыми снаружи и изнутри – вот к чему стоит стремиться!</label>
+                                </div>
+
+                                <div class="checkbox__item question__item">
+                                  <input type="radio" class="custom__checkbox" id="option_2" name="option" required>
+                                  <label for="option_2" class="custom__checkbox__label">Я и сейчас неплохо разбираюсь в питании, определенно смогу делиться своим опытом!</label>
+                                  <label for="option_2" class="custom__checkbox__label">Психологами не рождаются, а становятся! Так что можно начинать прямо сейчас.</label>
+                                  <label for="option_2" class="custom__checkbox__label">Есть много примеров успешных блогеров. Всё реально!</label>
+                                  <label for="option_2" class="custom__checkbox__label">Профессиональные путешественники – те, кто умеют зарабатывать на том, что приносит удовольствие. Почему бы мне не стать ведущим программы о путешествиях?</label>
+                                </div>
+                              </div>
+
+                              <button type="submit" class="btn question__btn">
+                                дальше
+                              </button>
+                            </form>
+                          </div>
+                        </div>-->
+            <!-- end question 8 -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__wrapper">
+				<p class="footer__copyright__text">ООО «Мон’дэлис Русь».
+					<br>Часть группы компаний Mondelēz
+					<br>International. Все права защищены.</p>
+				<img class="footer__copyright__img" width="132" height="48" src="images/dist/mondelez.svg" alt="mondelez"
+						 loading="lazy">
+
+				<div class="social">
+					<a href="#" class="social__item social__item--youtube" target="_blank">
+						<span></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!--<picture decoding="async">
+		<source srcset="images/dist/footer__bg&#45;&#45;mobile.svg" media="(max-width: 767px)">
+		<img class="footer__bg" src="images/dist/footer__bg.svg" alt="footer__bg" loading="lazy">
+	</picture>-->
+	<div class="footer__bg">
+		<img src="./images/dist/footer__bg&#45;&#45;mobile.svg" alt="img">
+	</div>
+
+</footer>
+
+<div class="popups">
+	<div id="registrationPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация</div>
+				<form class="popup__form" novalidate="novalidate" id="registrationForm">
+					<div class="form__item">
+						<input name="fio" id="fio" type="text" class="form__input" placeholder="Ф.И.О." required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="email_2" id="email_2" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="phone_2" id="phone_2" type="tel" class="form__input" placeholder="Мобильный телефон">
+						<span class="form__item__description">
+							Необязательно к заполнению
+						</span>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="rules_aktition" name="rules_aktition" required checked>
+						<label for="rules_aktition" class="custom__checkbox__label">Я согласен с <a href="#" target="_blank" class="form__item__link" style="padding-left: 5px">Правилами Акции</a></label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="personal_data" name="personal_data" required checked>
+						<label for="personal_data" class="custom__checkbox__label">
+							<span>
+								Я даю свое <a href="#" class="form__item__link">согласие</a> на обработку моих
+								персональных данных в соответствии с Правилами акции и <a href="#" class="form__item__link">Положением
+									об
+									организации обработки ПД в ООО
+									«Мон’дэлис Русь».</a>
+							</span>
+						</label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="mailing" name="mailing">
+						<label for="mailing" class="custom__checkbox__label">Я согласен получать рассылки по акциям Mondelez</label>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<a href="#" class="form__link" data-popup="#authPopup">
+								Авторизация
+							</a>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="addCard" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Добавить <br>номер карты</div>
+				<form class="popup__form" novalidate="novalidate" id="addCardForm">
+
+					<div class="form__item">
+						<input name="card_number" id="card_number" type="text" class="form__input"
+									 placeholder="Номер карты Клуба Перекрёсток" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">добавить</button>
+						</div>
+
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="authPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Авторизация</div>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_3" id="email_3" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="password" id="password" type="password" class="form__input" placeholder="Пароль" required>
+						<span class="form__item__error form__item__error--special">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item form__item--error">
+						Неверный логин или пароль
+					</div>
+
+					<div class="form__item form__item--link">
+						<a href="#" class="form__link" data-popup="#passwordPopup">
+							Забыли пароль?
+						</a>
+					</div>
+
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="passwordPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Сброс пароля</div>
+				<p class="popup__subtitle">
+					Введите свой Email для восстановления пароля
+				</p>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_5" id="email_5" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="successfulRegistration" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация <br>пройдена</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Пароль для входа на сайт<br> отправлен на e-mail, указанный<br> при регистрации.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">закрыть</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="howGetPrize1" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Как получить <br>приз?</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Для получения приза ожидайте запрос <br>на уточнение данных на электронную <br>почту, указанную при регистрации<br>на сайте. <br>Перечень данных указан в п.4.5 Правил <br>Акции. Либо можете прислать их <br>самостоятельно на почту <a href="https://info@belvita.life">info@belvita.life</a>.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">понятно</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="howGetPrize2" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Как получить <br>приз?</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Для получения приза ожидайте запрос <br>документов на электронную почту, <br>указанную при регистрации на сайте. <br>Перечень документов указан в п.4.4 <br>Правил Акции. Либо можете прислать <br>их самостоятельно на почту <br><a href="https://info@belvita.life">info@belvita.life</a>.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">понятно</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/include/jquery.min.js"></script>
+<script src="js/include/jquery.maskedinput.min.js"></script>
+<script src="js/include/jquery.validate.min.js"></script>
+<script src="js/include/slick.min.js"></script>
+<script src="js/include/select2.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

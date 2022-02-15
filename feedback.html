@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>BelVita</title>
+  <meta name="description" content="Startup HTML">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="css/include/slick.css">
+  <link rel="stylesheet" href="css/include/select2.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+<header class="header" id="header">
+  <div class="container mob">
+    <a href="index.html" class="nav__link">
+      <img src="./images/logo.png"
+           loading="lazy"
+           width="100"
+           alt="img">
+    </a>
+    <div class="nav__item nav__item--burger no-xl md">
+      <button class="burger" id="burgerBtn" type="button">
+        <span class="burger__item">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header__inner">
+      <div class="nav nav--left" id="nav">
+        <ul class="nav__list">
+
+          <li class="nav__item home-link">
+            <a href="index.html" class="nav__link">
+              <img src="./images/logo.png"
+                   loading="lazy"
+                   width="214"
+                   height="162"
+                   alt="img">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="test.html" class="nav__link ">
+                  <span class="nav__link__text">
+                    СОЖ-Тест
+                  </span>
+              <img width="175" height="34" class="nav__link__bg nav__link__bg--2"
+                   src="images/dist/nav__link__bg_2.svg" alt="img" loading="lazy">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="product.html" class="nav__link">
+                  <span class="nav__link__text">
+                    О Продукте
+                  </span>
+              <img width="148" height="34" class="nav__link__bg nav__link__bg--3"
+                   src="images/dist/nav__link__bg_3.svg" alt="img" loading="lazy">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="feedback.html" class="nav__link nav__link--active">
+                  <span class="nav__link__text">
+                    Обратная связь
+                  </span>
+              <img width="162" height="34" class="nav__link__bg nav__link__bg--6"
+                   src="images/dist/nav__link__bg_6.svg" alt="img" loading="lazy">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+
+    <div class="intro intro--cabinet">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <div class="feedback cabinet">
+              <div class="cabinet__head">
+                <h2 class="cabinet__title">
+                  <span class="cabinet__title__text">
+                    Обратная связь
+                  </span>
+                  <span class="cabinet__title__bg"></span>
+                </h2>
+
+                <div class="feedback__body">
+                  <div class="feedback__box">
+                    <div class="feedback__box__wrapper">
+                      <h3 class="feedback__box__title">
+                        Cвязаться с нами
+                      </h3>
+                      <p class="feedback__box__description">
+                        Если у вас появились вопросы — посмотрите F.A.Q или просто оставьте нам сообщение, и мы<br
+                          class="no-md">
+                        обязательно ответим!
+                      </p>
+
+                      <form id="feedbackForm" name="feedbackForm" class="feedback__form form">
+                        <div class="form__line">
+                          <div class="form__item">
+                            <input name="name" id="name" type="text" class="form__input" placeholder="Ваше имя"
+                              required>
+                          </div>
+                          <div class="form__item">
+                            <input name="email" id="email" type="email" class="form__input" placeholder="Ваш e-mail"
+                              required>
+                          </div>
+                        </div>
+
+                        <div class="form__item">
+                          <div class="select form__select">
+                            <select name="theme" data-placeholder="Выберите тему сообщения" required>
+                              <option value=""></option>
+                              <option value="1">Тема 1</option>
+                              <option value="2">Тема 2</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form__item">
+                          <textarea name="message" id="message" class="form__input form__input--textarea"
+                            placeholder="Ваше сообщение"></textarea>
+                        </div>
+
+                        <div class="form__item">
+                          <button type="submit" class="btn form__submit">
+                            отправить
+                          </button>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="feedback__box">
+                    <div class="feedback__box__wrapper">
+                      <h3 class="feedback__box__title feedback__box__title--left">
+                        FAQ
+                      </h3>
+
+                      <div class="faq">
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Какая компания проводит акцию?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Организатором Акции является ООО «Мон’дэлис Русь».  Место нахождения: Россия, 601123, г. Покров, Владимирская область, Петушинский р-н, ул. Франца Штольверка, д. 10. Банковские реквизиты: ИНН: 3321020710 КПП: 997150001, р/с 40702810500000100331 в ООО Эйч-эс-би-си Банк (РР), 115054, Россия, Москва, Павелецкая площадь, д.2, стр.2, к/с 30101810400000000351, БИК: 044525351.<br class="no-md">
+                            Оператором Акции является НАО «ЭМГ Промо». Место нахождения: Россия, 117105, г.Москва, вн.тер.г. Муниципальный округ Донской, Варшавское ш., д.1, стр.17, ком.1, офис В-101, ИНН 7701632924.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Где можно ознакомиться с полными правилами акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            С полными Правилами Акции Участник может ознакомиться на сайте Акции <a href="https://www.belvita.life">www.belvita.life</a> <br class="no-md">
+                            Дополнительную интересующую информацию об условиях участия и проведения Акции, можно получить, отправив свой вопрос на электронный ящик
+                            <a href="https://info@belvita.life">info@belvita.life</a>.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Какие сроки проведения акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            •	Общий срок проведения Акции: с 01 августа 2021 г. по 31 октября 2021 г. (включительно).<br>
+                            •	Срок приобретения Продукции покупателем для участия в Акции: с 01 августа 2021 года по 30 сентября 2021 года (включительно).<br>
+                            •	Срок регистрации Карт Клуба Перекрёсток на сайте <a href="https://www.belvita.life">www.belvita.life</a> для участия в Акции: с 01 августа 2021 года по 30 сентября 2021 года (включительно).<br>
+                            •	Срок определения Победителей Акции: с 25 августа 2021 года по 11 октября 2021 года (включительно).<br>
+                            •	Срок вручения Призов Победителям Акции: с 01 августа 2021 года по 31 октября 0102021 года (включительно).<br>
+                            Отсчет времени при проведении Акции происходит по московскому времени.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Что необходимо сделать, чтобы принять участие в акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Для того чтобы стать участником Акции (далее «Участник Акции»), дееспособному гражданину РФ в период с 00:00:00 часов (по московскому времени) «01» августа 2021 года по 23:59:59 часов (по московскому времени) «30» сентября 2021 года необходимо:
+                            <br>
+                            •	Приобрести в любом магазине Торговой сети «Перекресток» не менее 2 (двух) единиц Продукции под товарным знаком «belVita» в 1 (одном) Чеке,
+                            <br>
+                            •	Зарегистрировать номер карты Клуба Перекрёсток на сайте www.belvita.life. При регистрации на Сайте Участник указывает Ф.И.О., адрес электронной почты, номер телефона и проходит верификацию (т.е. подтверждает правильность введения адреса электронной почты с помощью указания на Сайте комбинации букв и цифр, отправленной Участнику Оператором в сообщении на электронную почту, указанную при регистрации), указать номер карты лояльности торговой сети «Перекрёсток».
+
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Какая продукция участвует в акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            -	Печенье belVita Утреннее Мультизлаковое 225 г,<br>
+                            -	Печенье belVita Утреннее витаминизированное с фундуком и медом 225 г,<br>
+                            -	Печенье belVita Утреннее витаминизированное с какао 225 г,<br>
+                            -	Печенье belvita Утреннее Сэндвич витаминное с цельными злаками и йогуртовой начинкой 253 г,<br>
+                            -	Печенье belvita Утреннее Сэндвич витаминное с какао 253 г,<br>
+                            -	Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками с клубничной начинкой 250 г,<br>
+                            -	Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками и начинкой с какао 250г.<br>
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              В каких магазинах и в каких городах можно купить товар?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Акция проводится во всех магазинах торговой сети «Перекресток» на всей территории Российской Федерации. Актуальный список адресов магазинов сети, сроки сгорания Бонусов и полные условия использования картой лояльности находится на сайте торговой сети Перекресток <a href="https://www.perekrestok.ru/">https://www.perekrestok.ru/</a>.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Кто может принимать участие в акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            К участию в Акции допускаются совершеннолетние дееспособные лица, являющиеся гражданами Российской Федерации, постоянно проживающие на территории Российской Федерации. В Акции запрещается принимать участие работникам и представителям Организатора, аффилированным с ним лицам, членам семей таких работников и представителей, а также работникам других юридических лиц, причастных к организации проведения Акции.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Какие призы можно выиграть и в каком количестве ?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            <span class="bold">Гарантированный Приз</span> – единоразовое начисление 150 (ста пятидесяти) бонусов на карту лояльности Участника торговой сети «Перекресток» в количестве 2 000 (Две тысячи) штук.
+                            <br><br>
+                            <span class="bold">Приз №1</span> – Набор продукции общей стоимостью 2 745,60 рублей (Две тысячи семьсот сорок пять рублей 60 копеек)  в т.ч. НДС 20%. Общее количество Призов №1 - в количестве 40 (сорок) штук.
+                            <br><br>
+                            Набор продукции включает в себя: <br>
+                            •	Печенье belVita Утреннее Мультизлаковое 225 г – 2 упаковки, <br>
+                            •	Печенье belVita Утреннее витаминизированное с фундуком и медом 225 г – 2 упаковки, <br>
+                            •	Печенье belVita Утреннее витаминизированное с какао 225 г – 2 упаковки, <br>
+                            •	Печенье belvita Утреннее Сэндвич витаминное с цельными злаками и йогуртовой начинкой 253 г – 2 упаковки,<br>
+                            •	Печенье belvita Утреннее Сэндвич витаминное с какао 253 г – 2 упаковки, <br>
+                            •	Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками с клубничной начинкой 250 г – 2 упаковки,<br>
+                            •	Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками и начинкой с какао 250 г – 2 упаковки.<br>
+                            <br>
+                            <span class="bold">Приз №2</span> – Фитнес-трекер Xiaomi Mi стоимостью 5 266,80 рублей (Пять тысяч двести шестьдесят шесть рублей 80 копеек) в т.ч. НДС 20% и денежная часть Приза №2 в размере 683,00 рубля (Шестьсот восемьдесят три рубля 00 копеек). Общее количество Призов №2 – 18 (восемнадцать) штук.
+                            <br><br>
+                            <span class="bold">Главный Приз №1</span> – Планшет Huawei стоимостью 19 786,80 рублей (Девятнадцать тысяч семьсот восемьдесят шесть рублей 80 копеек), в т.ч. НДС 20% и денежная часть Главного Приза №1 в размере 8 501,00 рубль (Восемь тысяч пятьсот один рубль 00 копеек). Общее количество Главных Призов № 1 – 2 (две) штуки.
+                            <br><br>
+                            <span class="bold">Главный Приз №2</span> – Электросамокат Globber One стоимостью 23 218,80 рублей (Двадцать три тысячи двести восемнадцать рублей 80 копеек) в т.ч. НДС 20% и денежная часть Главного Приза №2 в размере 10 349,00 рублей (Десять тысяч триста сорок девять рублей 00 копеек). Общее количество Главных Призов № 2 – 2 (две) штуки.
+                            <br><br>
+                            Денежная часть Приза №2, Главного Приза №1 и Главного Приза №2 отдельно от приза не выплачивается. Денежные эквиваленты по полученным Призам не выплачиваются.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Сколько призов я могу выиграть за акцию?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Максимальный размер Призового фонда, который может выиграть 1 (Один) Участник за все время проведения Акции составляет:
+                            -	Гарантированный приз – не более 2000 (двух тысяч) шт. <br><br>
+                            -	Приз №1 - не более 1 (Одной) шт. <br>
+                            -	Приз №2 - не более 1 (Одной) шт. <br>
+                            -	Главный Приз №1 и №2  - не более 1 (Одной) шт.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Как проводится розыгрыш призов?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Обладатели Призов №1, №2, Главного Приза №1 и №2 определяются по формуле, указанной в п.3.2 Правил
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Как узнать, что вы выиграли приз?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Обладатель Приза оповещается о выигрыше посредством публикации победителей на сайте <a href="https://www.belvita.life">www.belvita.life</a> в разделе Победители и в Личном кабинете . После получения информации о выигрыше Приза №2, Главного Приза №1 и №2 необходимо направить запрошенные данные в течение 72 часов на почту <a href="https://info@belvita.life">info@belvita.life</a>
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Как получить свой приз?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            1. Гарантированный Приз передается Победителю производится путем пополнения баланса карты лояльности торговой сети «Перекрёсток», предъявленной в момент совершения покупки в сети «Перекрёсток».
+                            <br><br>
+                            2. Приз №1, 2 , Главный Приз №1 и №2 передается Победителю путем отправки курьерской службой.  Для получения Приза №2, Главного Приза №1 и №2 Победитель обязуется предоставить Оператору Акции на электронную почту
+                            <a href="https://info@belvita">info@belvita</a>. life  документы и информацию в течение 72 часов, указанные в полных Правилах акции.
+
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Нужно ли платить налоги?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Нет, не нужно. Налоги оплачивает Оператор Акции.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Когда будет проходить розыгрыш Призов №1 и №2?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            с 00:00:00 по 23:59:59 часов 25.08.2021; <br>
+                            с 00:00:00 по 23:59:59 часов 08.09.2021; <br>
+                            с 00:00:00 по 23:59:59 часов 22.09.2021; <br>
+                            с 00:00:00 по 23:59:59 часов 11.10.2021.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Когда будет проходить розыгрыш Главных призов №1 и №2??
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            с 00:00:00 по 23:59:59 часов 08.09.2021; <br>
+                            с 00:00:00 по 23:59:59 часов 11.10.2021.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Могут ли измениться правила акции? Может ли акция закончиться досрочно?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Организатор Акции вправе изменять условия данной Акции в любой момент.
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Могут ли мои личные данные быть использованы компанией в других целях?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            Нет. <br>
+                            Персональные данные собираются с целью отправки Участникам призов, сообщений Участникам о выигрыше, информации о продукции Организатора и проводимых им мероприятиях, рекламных предложений, а также с целью проведения маркетингового анализа и подготовки статистической информации.
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__wrapper">
+				<p class="footer__copyright__text">ООО «Мон’дэлис Русь».
+					<br>Часть группы компаний Mondelēz
+					<br>International. Все права защищены.</p>
+				<img class="footer__copyright__img" width="132" height="48" src="images/dist/mondelez.svg" alt="mondelez"
+						 loading="lazy">
+
+				<div class="social">
+					<a href="#" class="social__item social__item--youtube" target="_blank">
+						<span></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!--<picture decoding="async">
+		<source srcset="images/dist/footer__bg&#45;&#45;mobile.svg" media="(max-width: 767px)">
+		<img class="footer__bg" src="images/dist/footer__bg.svg" alt="footer__bg" loading="lazy">
+	</picture>-->
+	<div class="footer__bg">
+		<img src="./images/dist/footer__bg&#45;&#45;mobile.svg" alt="img">
+	</div>
+
+</footer>
+
+<div class="popups">
+	<div id="registrationPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация</div>
+				<form class="popup__form" novalidate="novalidate" id="registrationForm">
+					<div class="form__item">
+						<input name="fio" id="fio" type="text" class="form__input" placeholder="Ф.И.О." required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="email_2" id="email_2" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="phone_2" id="phone_2" type="tel" class="form__input" placeholder="Мобильный телефон">
+						<span class="form__item__description">
+							Необязательно к заполнению
+						</span>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="rules_aktition" name="rules_aktition" required checked>
+						<label for="rules_aktition" class="custom__checkbox__label">Я согласен с <a href="#" target="_blank" class="form__item__link" style="padding-left: 5px">Правилами Акции</a></label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="personal_data" name="personal_data" required checked>
+						<label for="personal_data" class="custom__checkbox__label">
+							<span>
+								Я даю свое <a href="#" class="form__item__link">согласие</a> на обработку моих
+								персональных данных в соответствии с Правилами акции и <a href="#" class="form__item__link">Положением
+									об
+									организации обработки ПД в ООО
+									«Мон’дэлис Русь».</a>
+							</span>
+						</label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="mailing" name="mailing">
+						<label for="mailing" class="custom__checkbox__label">Я согласен получать рассылки по акциям Mondelez</label>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<a href="#" class="form__link" data-popup="#authPopup">
+								Авторизация
+							</a>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="addCard" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Добавить <br>номер карты</div>
+				<form class="popup__form" novalidate="novalidate" id="addCardForm">
+
+					<div class="form__item">
+						<input name="card_number" id="card_number" type="text" class="form__input"
+									 placeholder="Номер карты Клуба Перекрёсток" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">добавить</button>
+						</div>
+
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="authPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Авторизация</div>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_3" id="email_3" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="password" id="password" type="password" class="form__input" placeholder="Пароль" required>
+						<span class="form__item__error form__item__error--special">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item form__item--error">
+						Неверный логин или пароль
+					</div>
+
+					<div class="form__item form__item--link">
+						<a href="#" class="form__link" data-popup="#passwordPopup">
+							Забыли пароль?
+						</a>
+					</div>
+
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="passwordPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Сброс пароля</div>
+				<p class="popup__subtitle">
+					Введите свой Email для восстановления пароля
+				</p>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_5" id="email_5" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="successfulRegistration" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация <br>пройдена</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Пароль для входа на сайт<br> отправлен на e-mail, указанный<br> при регистрации.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">закрыть</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="howGetPrize1" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Как получить <br>приз?</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Для получения приза ожидайте запрос <br>на уточнение данных на электронную <br>почту, указанную при регистрации<br>на сайте. <br>Перечень данных указан в п.4.5 Правил <br>Акции. Либо можете прислать их <br>самостоятельно на почту <a href="https://info@belvita.life">info@belvita.life</a>.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">понятно</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="howGetPrize2" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Как получить <br>приз?</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Для получения приза ожидайте запрос <br>документов на электронную почту, <br>указанную при регистрации на сайте. <br>Перечень документов указан в п.4.4 <br>Правил Акции. Либо можете прислать <br>их самостоятельно на почту <br><a href="https://info@belvita.life">info@belvita.life</a>.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">понятно</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/include/jquery.min.js"></script>
+<script src="js/include/jquery.maskedinput.min.js"></script>
+<script src="js/include/jquery.validate.min.js"></script>
+<script src="js/include/slick.min.js"></script>
+<script src="js/include/select2.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
